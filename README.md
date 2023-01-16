@@ -5,7 +5,7 @@
 ## Instrucciones de funcionamiento
 1. **Descargar** el **proyecto** desde el repositorio de **Github**.
 2. Mover el proyecto a la carpeta **\htdocs** de nuestro XAMPP.
-3. Copiar el archivo **.env.example** y editarlo para introducir los datos de la base de datos:
+3. Cambiar el nombre al archivo **.env.example** por **.env**, editarlo para introducir los datos de la base de datos:
     1. Nombre de la base de datos
     2. Nombre de usuario
     3. Contraseña
