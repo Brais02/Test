@@ -1,6 +1,7 @@
 # Test Hotelinking
 ## Requisitos
-- **XAMPP o aplicaciones parecidas instalado y funcional.**
+- **[XAMPP](https://www.apachefriends.org/es/download.html) o aplicaciones parecidas instalado y funcional.**
+- **[Composer](https://getcomposer.org/download/) instalado y actualizado.**
 
 ## Instrucciones de funcionamiento
 1. **Descargar** el **proyecto** desde el repositorio de **Github**.
@@ -10,10 +11,27 @@
     2. Nombre de usuario (DB_USERNAME)
     3. Contraseña (DB_PASSWORD)
 4. Acceder con la **terminal** a la carpeta del **proyecto**.
-5. Hacer uso del siguiente **comando** para crear las tablas de la base de datos y introducirles unos valores por defecto.
+5. Hacer uso de los siguientes **comandos** para:
+    1. Actualizar el Vendor
+    2. Generar la clave de laravel en el archivo .env
+    3. Crear las tablas de la base de datos y introducirles unos valores por defecto 
+        1. Los guiones se tienen que volver a escribir en la terminal porque no se copian bien
+    4. Instalar y ejecutar NPM
 
 ```
-php artisan migrate:fresh –-seed
+composer update
+```
+```
+php artisan key:generate
+```
+```
+php artisan migrate:fresh --seed
+```
+```
+npm install
+```
+```
+npm run dev
 ```
 
 ## Usuario por defecto
