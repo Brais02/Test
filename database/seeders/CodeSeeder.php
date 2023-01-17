@@ -20,7 +20,7 @@ class CodeSeeder extends Seeder
                 'name' => 10+$i,
                 'activated' => 0+$i,
                 'user_id' => 1,
-                'offers_id' => 1,
+                'offers_id' => 1+$i,
             ]);
         }
     }
